@@ -5,17 +5,28 @@
 //     return;
 //   }
 //   console.log(number);
-// it works on pre-decreament only
+// // it works on pre-decreament only
 //   countdown(--number); //nnumber -1
 // }
 // countdown(10);
-function countdown(number) {
-    if (number >= 10) {
-        console.log("Done");
-        return;
+// function countdown(number: number): void {
+//   console.log("start loop from ",number);
+//   if (number >= 10) {
+//     console.log("Done");
+//   }
+//   console.log(number);
+//   // it works on pre-increament only
+//   countdown(--number); //nnumber -1
+// }
+// countdown(15);
+function recur(repeat) {
+    console.log("start loops from", repeat);
+    if (repeat > 0) {
+        recur(--repeat);
     }
-    console.log(number);
-    // it works on pre-increament only
-    countdown(++number); //nnumber -1
+    else {
+        console.log("loop ends");
+    }
+    console.log("function ended", repeat);
 }
-countdown(1);
+recur(6);

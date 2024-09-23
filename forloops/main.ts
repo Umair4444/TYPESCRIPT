@@ -1,9 +1,9 @@
 interface Cars {
   [key: string]: string | number | boolean;
-  //   model: string;
-  //   driver: string;
-  //   year: number;
-  //   status: boolean;
+    // model: string;
+    // driver: string;
+    // year: number;
+    // status: boolean;
 }
 
 const car: Cars = {
@@ -15,6 +15,8 @@ const car: Cars = {
 
 // console.log(car);
 
+console.log("For in key Example");
+
 for (let key in car) {
   console.log(`${key} : ${car[key]} : ${car.model}  `);
 }
@@ -25,4 +27,10 @@ for (let key in car) {
 //     }
 //   }
 
+console.log("For in Example");
 console.log(car);
+
+for (let allcars in car) {
+  console.log(allcars);
+}
+
